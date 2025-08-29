@@ -1,7 +1,7 @@
 """
 title: ArXiv Search
 author: blunderfist
-git_url: https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv.py
+git_url: https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv/arxiv_tool.py
 version: 1.0.0
 description: This tool searches ArXiv
 required_open_webui_version: 0.4.0
