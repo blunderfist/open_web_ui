@@ -22,11 +22,6 @@ class Tools:
         self.valves = self.Valves()
         self.base_url = "https://api.semanticscholar.org/graph/v1/"
 
-    class Valves(BaseModel):
-        api_key: str = Field("", description="Your API key here")
-
-
-
     async def fetch_paper(
         self, __event_emitter__,
         query: str,
@@ -133,7 +128,7 @@ class Tools:
     async def fetch_papers_partial_match(
             self, __event_emitter__,
             query: str
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Suggest paper query completions for interactive search.
 
@@ -185,7 +180,7 @@ class Tools:
             self, __event_emitter__, 
             ids: List[str], 
             fields: str
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Get details for multiple papers at once
         Fields is a single-value string parameter, not a multi-value one.
@@ -259,7 +254,7 @@ class Tools:
             venue:Optional[str] = None,
             fieldsOfStudy: Optional[str] = None,
             offset: Optional[int] = None
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper Relevance Search Tool
 
@@ -363,7 +358,7 @@ class Tools:
             year: Optional[str] = None,
             venue:Optional[str] = None,
             fieldsOfStudy: Optional[str] = None,
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
             Semantic Scholar Bulk Paper Search Tool
 
@@ -480,7 +475,7 @@ class Tools:
             year: Optional[str] = None,
             venue:Optional[str] = None,
             fieldsOfStudy: Optional[str] = None,
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper Title Match Tool
 
@@ -561,7 +556,7 @@ class Tools:
             self, __event_emitter__, 
             paper_id: str, 
             fields: str
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper Details Tool
 
@@ -637,7 +632,7 @@ class Tools:
             offset: Optional[int], 
             limit: Optional[int], 
             fields: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper Author Details Tool
 
@@ -719,7 +714,7 @@ class Tools:
             limit: Optional[int], 
             fields: Optional[str],
             publicationDateOrYear: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper Citations Tool
 
@@ -799,7 +794,7 @@ class Tools:
             offset: Optional[int], 
             limit: Optional[int], 
             fields: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Paper References Tool
 
@@ -879,7 +874,7 @@ class Tools:
             self, __event_emitter__, 
             fields: str, 
             ids: List[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Author Batch Data Tool
 
@@ -953,7 +948,7 @@ class Tools:
             offset: Optional[int], 
             limit: Optional[int], 
             fields: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
 
         """
         Semantic Scholar Author Search Tool
@@ -1031,7 +1026,7 @@ class Tools:
             self, __event_emitter__, 
             author_id: str, 
             fields: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Author Details Tool
 
@@ -1098,7 +1093,7 @@ class Tools:
             limit: Optional[int], 
             fields: Optional[str], 
             publicationDateOrYear: Optional[str]
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Author Papers Tool
 
@@ -1184,7 +1179,7 @@ class Tools:
             year: Optional[str] = None,
             venue: Optional[List[str]] = None,
             fieldsOfStudy: Optional[List[str]] = None
-            ) -> Dict[str: Any]:
+            ) -> Dict[str, Any]:
         """
         Semantic Scholar Text Snippet Search Tool
 
