@@ -1,9 +1,9 @@
 """
 title: Semantic Scholar Search
 author: blunderfist
-git_url: https://github.com/blunderfist/string-reverse.git
+git_url: https://github.com/blunderfist/open_web_ui/blob/main/tools/semantic_scholar.py
 version: 1.0.0
-description: This tool searches semantic scholar for relevant papers using the free api
+description: This tool searches semantic scholar
 required_open_webui_version: 0.4.0
 requirements: pydantic>=2.11.4,httpx>=0.28.1
 licence: MIT
