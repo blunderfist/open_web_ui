@@ -1,9 +1,13 @@
 # arXiv Search Tool
 
 **Author:** [blunderfist](https://github.com/blunderfist)
+
 **Version:** 1.0.0
+
 **License:** MIT
+
 **GitHub:** [https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv](https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv)
+
 **Required Open WebUI Version:** ≥ 0.4.0
 
 ## Overview
