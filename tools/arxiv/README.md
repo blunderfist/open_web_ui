@@ -3,7 +3,7 @@
 **Author:** [blunderfist](https://github.com/blunderfist)
 **Version:** 1.0.0
 **License:** MIT
-**GitHub:** [arXiv Search Tool](https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv)
+**GitHub:** [https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv](https://github.com/blunderfist/open_web_ui/blob/main/tools/arxiv)
 **Required Open WebUI Version:** ≥ 0.4.0
 
 ## Overview
@@ -83,3 +83,7 @@ UserValves(
   },
   // ... more papers ...
 ]
+
+
+Disclaimer
+This tool is provided as-is and without any warranty. Use of this tool is subject to the terms of service of the arXiv API. Always respect the API's rate limits and terms of use.
