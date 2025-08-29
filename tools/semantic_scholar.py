@@ -19,7 +19,6 @@ import asyncio
 class Tools:
     def __init__(self):
         """Initialize the Tool."""
-        self.valves = self.Valves()
         self.base_url = "https://api.semanticscholar.org/graph/v1/"
 
     async def fetch_paper(
