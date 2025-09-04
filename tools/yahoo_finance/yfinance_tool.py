@@ -127,8 +127,8 @@ class Tools:
 				- "financials": Income statement
 				- "balance_sheet": Balance sheet
 				- "cashflow": Cash flow statement
-			start_date (str): Starting date for data. Format YYYY - MM - DD e.g("2023 - 01 - 01")
-			end_date (str): Ending date for data. Format YYYY - MM - DD e.g("2023 - 01 - 02")
+			start_date (str): Starting date for data. Format YYYY-MM-DD e.g("2023-01-01")
+			end_date (str): Ending date for data. Format YYYY-MM-DD e.g("2023-01-02")
 			historical_data = apple.history(start = start_date, end = end_date)		period: str = "1mo",
 			period (str): Used only if data_type="history" and not (start_date and end_date) supplied. Controls how far back the data goes (e.g., "1mo", "6mo", "1y", "5y", "max").
 			interval (str): Interval for historical data.
@@ -182,3 +182,5 @@ class Tools:
 		})
 
 		return json.dumps(combined, indent=2)
+
+
