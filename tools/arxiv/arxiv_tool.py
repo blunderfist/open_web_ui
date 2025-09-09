@@ -130,12 +130,13 @@ class Tools:
         query_string = urlencode(params)
         url = f"{self.base_url}?{query_string}"
 
-        await __event_emitter__({
-            "type": "status",
-            "data": {"description": f"Searching ArXiv with the following parameters {params}", 
-                     "done": False, # Displayed while search is being run
-                     "hidden": True} # True removes message after chat compeletion
-        })
+        if __event_emitter__:
+            await __event_emitter__({
+                "type": "status",
+                "data": {"description": f"Searching ArXiv with the following parameters {params}", 
+                        "done": False, # Displayed while search is being run
+                        "hidden": True} # True removes message after chat compeletion
+            })
 
         attempt = 0
         while attempt < self.max_retries:
