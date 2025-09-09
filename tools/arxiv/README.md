@@ -32,11 +32,11 @@ This arXiv Search tool is designed for integration with the Open WebUI platform.
 
 2. **Create a New Tool:**  Add a new tool.
 
-3. **Paste the Code:** Copy the Python code provided below and paste it into the code editor provided by Open WebUI.  Ensure you've installed the required dependencies (`pydantic` and `feedparser`) as outlined in the "Requirements" section.
+3. **Paste the Code:** Copy the Python code provided below and paste it into the code editor provided by Open WebUI.
 
 4. **Configure (Optional):** Adjust the `UserValves` parameters within the code to customize your search behavior (see "Advanced Usage" below).  You can leave `use_valves` as `False` to use the default settings defined in `UserValves`.
 
-5. **Save and Run:** Save the tool and run it using the appropriate Open WebUI interface.  You will typically provide the `search_query` parameter to initiate a search.
+5. **Save:** Save the tool.
 
 
 ## User Valves Explained
